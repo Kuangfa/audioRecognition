@@ -52,9 +52,10 @@ def sound_cut(file_name):
 
 
 def baidu_Speech_To_Text(filePath):  # 百度语音识别
-    APP_ID = '23061756'
-    API_KEY = 'vYSaUlHjkyVwaUujC9G4N1iG'
-    SECRET_KEY = 'tA0jokPNLVH133cjNN5jQdCOsAOGaYgj'
+    """ 你的 APPID AK SK """
+    APP_ID = '你的 App ID'
+    API_KEY = '你的 Api Key'
+    SECRET_KEY = '你的 Secret Key'
     aipSpeech = AipSpeech(APP_ID, API_KEY, SECRET_KEY)  # 初始化AipSpeech对象
     # 读取文件
     with open(filePath, 'rb') as fp:
